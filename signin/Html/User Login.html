@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login Page </title>
+	<script src="../java script/User validation.js"></script>
+</head>
+<body>
+<h1 id="heading" role="alert"></h1>
+<div id="log">
+<h1>Provide The Log In Details Below Form</h1> 
+<form>
+  <label for="fname">User  name:</label><br>
+  <input type="text" id="fname" name="fname" required onblur="err()"><br>
+<span id="error" role="alert"></span>
+
+  <label for="pass">Password:</label><br>
+  <input type="password" id="pass" name="fpass" required><br>
+</form>
+<button id="buton" onclick="press()">Log In</button>
+</div>
+</body>
+</html>
