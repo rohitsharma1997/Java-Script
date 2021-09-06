@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Accordion</title>
+</head>
+<body>
+<h1>Example of Accordion button</h1>
+<button id="buton" onclick='pen()'>show Paragraf</button>
+<p id="para" style="display:none;" > The Internet is the biggest world-wide communication network of computers. The Internet has millions of smaller domestic, academic, business, and government networks, which together carry many kinds of information. The short form of internet is the 'net'. The World Wide Web is one of its biggest services.</p> </style>
+<script>
+function pen()
+{ var x=document.getElementById("buton").innerHTML;
+if (x=="show Paragraf")
+{document.getElementById("para").setAttribute("style","display:inicial;");
+document.getElementById("buton").innerHTML="hide Paragraf";
+document.getElementById("buton").setAttribute("aria-expanded","True");}
+else
+{document.getElementById("buton").innerHTML="show Paragraf";
+document.getElementById("para").setAttribute("style","display:none;");
+document.getElementById("buton").setAttribute("aria-expanded","false");}}
+</script>
+</body>
+</html>
