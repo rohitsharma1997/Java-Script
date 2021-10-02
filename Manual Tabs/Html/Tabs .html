@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Tabs Example </title>
+	<script src="../java script/Tabs _java.js"></script>
+</head>
+<body>
+
+<h1>Example of Tabs  </h1>
+
+<div role="tablist" onkeydown="return handleArrowKeys(event);">
+<button role="tab" id="first" onclick='nn();'>tab1</button>	<button role="tab" id="second" tabindex="-1" onclick='onn();' aria-selected="false">Tab2</button>
+</div>
+<div id="main">
+<div  id="one" role="tabpanel" tabindex="0">
+<p>this is a first tab</p>
+</div>
+
+<div id="two" role="tabpanel" tabindex="-1" style="display:none;">
+<p> this is a second tab main region</p>
+</div>
+</div>
+</body>
+</html>
